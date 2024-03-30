@@ -9,7 +9,7 @@ pip install -r requirements.txt
 ```
 ---
 
-To run UI analyzer run the following command, generate OpenAI key and add it to
+To run UI analyzer run the following command, [generate OpenAI key]( https://platform.openai.com/api-keys) and add it to
 environment variable OPENAI_API_KEY:
 ```bash
 export OPENAI_API_KEY=<your-key>
