@@ -1,0 +1,104 @@
+2024-03-30 12:33:14 [INFO] Running PandasAI with openai LLM...
+2024-03-30 12:33:14 [INFO] Prompt ID: 6278434a-c37e-41c4-8f2f-4cbcd62c96f2
+2024-03-30 12:33:15 [INFO] error_code=insufficient_quota error_message='You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.' error_param=None error_type=insufficient_quota message='OpenAI API error received' stream_error=False
+2024-03-30 12:36:35 [INFO] Running PandasAI with openai LLM...
+2024-03-30 12:36:35 [INFO] Prompt ID: 8bdb73db-8677-4e49-9b42-d0528f0167e9
+2024-03-30 12:36:36 [INFO] error_code=insufficient_quota error_message='You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.' error_param=None error_type=insufficient_quota message='OpenAI API error received' stream_error=False
+2024-03-30 12:55:04 [INFO] Running PandasAI with openai LLM...
+2024-03-30 12:55:04 [INFO] Prompt ID: f7fce533-5e73-44bd-bba7-ea179fbcb2b6
+2024-03-30 12:55:05 [INFO] error_code=insufficient_quota error_message='You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.' error_param=None error_type=insufficient_quota message='OpenAI API error received' stream_error=False
+2024-03-30 12:58:36 [INFO] Running PandasAI with openai LLM...
+2024-03-30 12:58:36 [INFO] Prompt ID: 0318fafa-0a12-4df6-9f8a-3f7ea5ea37bd
+2024-03-30 12:58:37 [INFO] 
+                        Code generated:
+                        ```
+                        total_students = df.shape[0]
+total_students
+                        ```
+                    
+2024-03-30 12:58:37 [INFO] 
+Code running:
+```
+total_students = df.shape[0]
+total_students
+```
+2024-03-30 12:58:37 [INFO] Answer: 10
+2024-03-30 12:58:37 [INFO] Executed in: 0.9785652160644531s
+2024-03-30 12:58:55 [INFO] Running PandasAI with openai LLM...
+2024-03-30 12:58:55 [INFO] Prompt ID: 74934fe9-de5f-4ed9-bbff-a1971fbf6f5f
+2024-03-30 12:58:56 [INFO] 
+                        Code generated:
+                        ```
+                        df[df['major'] == 'Computer Science']
+                        ```
+                    
+2024-03-30 12:58:56 [INFO] 
+Code running:
+```
+df[df['major'] == 'Computer Science']
+```
+2024-03-30 12:58:56 [INFO] Answer:    id        name   college  gpa             major  graduate cs_language_tags
+0   1    John Doe       MIT  3.5  Computer Science      2018     python, java
+2   3   Joe Schmo  Stanford  3.8  Computer Science      2019     python, java
+4   5  Jack Black   Harvard  3.6  Computer Science      2019     python, java
+6   7  Jack Black   Harvard  3.6  Computer Science      2019     python, java
+8   9  Jack Black   Harvard  3.6  Computer Science      2019     python, java
+2024-03-30 12:58:56 [INFO] Executed in: 1.2134370803833008s
+2024-03-30 13:00:29 [INFO] Running PandasAI with openai LLM...
+2024-03-30 13:00:29 [INFO] Prompt ID: 677b3e70-707f-4f76-9e16-f7c9a00a45bb
+2024-03-30 13:00:30 [INFO] 
+                        Code generated:
+                        ```
+                        df[df['major'] == 'Computer Science'].shape[0]
+                        ```
+                    
+2024-03-30 13:00:30 [INFO] 
+Code running:
+```
+df[df['major'] == 'Computer Science'].shape[0]
+```
+2024-03-30 13:00:30 [INFO] Answer: 5
+2024-03-30 13:00:30 [INFO] Executed in: 1.1992497444152832s
+2024-03-30 13:00:40 [INFO] Running PandasAI with openai LLM...
+2024-03-30 13:00:40 [INFO] Prompt ID: 976e7c02-ccd3-47d2-b688-26c76005ee96
+2024-03-30 13:00:44 [INFO] 
+                        Code generated:
+                        ```
+                        # Filter the dataframe for students with major as Computer Science and knowing python language
+filtered_df = df[(df['major'] == 'Computer Science') & (df['cs_language_tags'].str.contains('python'))]
+
+# Count the number of students meeting the criteria
+count_students = filtered_df.shape[0]
+
+count_students
+                        ```
+                    
+2024-03-30 13:00:44 [INFO] 
+Code running:
+```
+filtered_df = df[(df['major'] == 'Computer Science') & df[
+    'cs_language_tags'].str.contains('python')]
+count_students = filtered_df.shape[0]
+count_students
+```
+2024-03-30 13:00:44 [INFO] Answer: 5
+2024-03-30 13:00:44 [INFO] Executed in: 3.1143720149993896s
+2024-03-30 13:02:13 [INFO] Running PandasAI with openai LLM...
+2024-03-30 13:02:13 [INFO] Prompt ID: ca5a27a1-4662-454f-88d3-fd1bce67b621
+2024-03-30 13:02:16 [INFO] 
+                        Code generated:
+                        ```
+                        # Count of students whose major is Computer Science and who do not know python language
+count = df[(df['major'] == 'Computer Science') & (~df['cs_language_tags'].str.contains('python'))].shape[0]
+count
+                        ```
+                    
+2024-03-30 13:02:16 [INFO] 
+Code running:
+```
+count = df[(df['major'] == 'Computer Science') & ~df['cs_language_tags'].
+    str.contains('python')].shape[0]
+count
+```
+2024-03-30 13:02:16 [INFO] Answer: 0
+2024-03-30 13:02:16 [INFO] Executed in: 2.8149266242980957s

@@ -1,0 +1,11 @@
+id,name,college,gpa,major,graduate,cs_language_tags
+1,John Doe,MIT,3.5,Computer Science,2018,"python, java"
+2,Jane Smith,Harvard,3.9,Mathematics,2019,"python, cpp, sql"
+3,Joe Schmo,Stanford,3.8,Computer Science,2019,"python, java"
+4,Jill Hill,MIT,3.7,Mathematics,2018,"python, cpp, sql"
+5,Jack Black,Harvard,3.6,Computer Science,2019,"python, java"
+6,Jill Hill,MIT,3.7,Mathematics,2018,"python, cpp, sql"
+7,Jack Black,Harvard,3.6,Computer Science,2019,"python, java"
+8,Jill Hill,MIT,3.7,Mathematics,2018,"python, cpp, sql"
+9,Jack Black,Harvard,3.6,Computer Science,2019,"python, java"
+10,Jill Hill,MIT,3.7,Mathematics,2018,"python"
